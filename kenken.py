@@ -795,3 +795,20 @@ check.expect("game6 (fail)",solve_kenken(puzzle1partial4a), False)
 check.expect("game7",solve_kenken(puzzle1partial4b), puzzle1soln)
 check.expect("game8",solve_kenken(puzzle1soln), puzzle1soln)
 '''
+
+counter = False
+while True:
+  if counter:
+    print("WARNING: Running this program again will overwrite your previous solution in 'solution.txt' so rename the file if you want to save it!")
+    print('\n')
+  file = input("Please input the name & extension of your KenKen puzzle (ex. kenken874.txt): ")
+  puzzle = read_puzzle(file)
+  solution = solve_kenken(puzzle)
+  if not solution:
+    print("Sorry, there has been an error. Please try again!")
+    print('\n')
+  else:
+    print_sol(solution, "solution.txt")
+    print("Please find your solution in 'solution.txt'.")
+    print('\n')
+    counter = True
