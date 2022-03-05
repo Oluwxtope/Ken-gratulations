@@ -49,7 +49,7 @@ Each KenKen puzzle is a square with dimensions *n* by *n*. The objective is to f
     > 4  2  3  1  
     > 2  4  1  3  
     > 1  3  4  2  
-3. Input and brag to your friends about how genius you are!
+3. Ken-gratulations! You can brag to your friends about how genius you are!
 <br><br>
 ![4x4 KenKen puzzle no. 200059 from kenkenpuzzle.com](/images/output.jpg)
 *4x4 KenKen puzzle no. 200059 solution from [kenkenpuzzle.com](https://www.kenkenpuzzle.com/)*
