@@ -1,10 +1,21 @@
 # KenKen Solver  
 
+## Table of Contents  
+
+---
+
+1. [How to Play](#how-to)
+2. [Creating Your Input File](#create-input)
+3. [Solving the Puzzle](#solve-puzzle)
+4. [Versions](#versions)
+5. [Future Updates](#future)
+<br><br>
+
 ![4x4 KenKen puzzle no. 200059 from kenkenpuzzle.com](/images/input.jpg)
 *4x4 KenKen puzzle no. 200059 from [kenkenpuzzle.com](https://www.kenkenpuzzle.com/)*
 <br><br>
 
-### How to Play
+## How to Play <a name='how-to'>  
 
 ---
 
@@ -15,7 +26,7 @@ Each KenKen puzzle is a square with dimensions *n* by *n*. The objective is to f
 3. Each bold-outlined group of cells is a cage containing digits which achieve the specified result using the specified mathematical operation: addition (+), subtraction (−), multiplication (×), and division (÷).
 <br><br>
 
-### Creating Your Input File
+## Creating Your Input File <a name='create-input'>  
 
 ---
 
@@ -39,7 +50,7 @@ Each KenKen puzzle is a square with dimensions *n* by *n*. The objective is to f
     4. Save the input text file in the same directory as kenken.py
 <br><br>
 
-## Solving the Puzzle
+## Solving the Puzzle <a name="solve-puzzle">  
 
 ---
 
@@ -55,7 +66,7 @@ Each KenKen puzzle is a square with dimensions *n* by *n*. The objective is to f
 *4x4 KenKen puzzle no. 200059 solution from [kenkenpuzzle.com](https://www.kenkenpuzzle.com/)*
 <br><br>
 
-## Versions  
+## Versions <a name="versions">  
 
 ---
 
@@ -66,7 +77,7 @@ Each KenKen puzzle is a square with dimensions *n* by *n*. The objective is to f
 *Gets filename input using while loop*
 <br><br>
 
-## Future updates  
+## Future Updates <a name="future">
 
 ---
 
