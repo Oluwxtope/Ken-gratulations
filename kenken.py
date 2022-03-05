@@ -1,4 +1,4 @@
-import check
+# import check
 import copy   #copies nested list to avoid mutating the consumed lists
 
 ## A Board, B, is a (listof (listof (anyof Str Nat Guess))
@@ -796,19 +796,29 @@ check.expect("game7",solve_kenken(puzzle1partial4b), puzzle1soln)
 check.expect("game8",solve_kenken(puzzle1soln), puzzle1soln)
 '''
 
-counter = False
 while True:
-  if counter:
-    print("WARNING: Running this program again will overwrite your previous solution in 'solution.txt' so rename the file if you want to save it!")
-    print('\n')
-  file = input("Please input the name & extension of your KenKen puzzle (ex. kenken874.txt): ")
-  puzzle = read_puzzle(file)
+  file = input("\nPlease input the name & extension of your KenKen puzzle (ex. kenken874.txt): ")
+  try:
+    puzzle = read_puzzle(file)
+  except:
+    print("Sorry, there has been an error. Please try again!")
+    continue
+  
   solution = solve_kenken(puzzle)
   if not solution:
-    print("Sorry, there has been an error. Please try again!")
-    print('\n')
+    print("Sorry, there is no solution for your puzzle. Check your formatting and try again!")
+    continue
   else:
     print_sol(solution, "solution.txt")
-    print("Please find your solution in 'solution.txt'.")
-    print('\n')
-    counter = True
+    print("Please find your solution in 'solution.txt'.\n")
+  
+  continue_program = input("Do you want to solve more puzzles? (y/n) ")
+  while continue_program not in ['y', 'n', 'Y', 'N']:
+    print("Error! Try again.")
+    continue_program = input("Do you want to solve more puzzles? (y/n) ")
+  
+  if continue_program in ['n', 'N']:
+    print("Have a beautiful time...")
+    break
+  else:
+    print("WARNING: Running this program again will overwrite your previous solution in 'solution.txt' so rename the file if you want to save it!")

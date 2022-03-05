@@ -1,14 +1,12 @@
 4
 a b b c
-a d e e
-f d g g
-f h i i
-a 6 *
-b 3 -
-c 3 =
-d 5 +
-e 3 -
-f 3 -
-g 2 /
-h 4 =
-i 1 -
+a d d c
+e e d f
+g g f f
+a 12 *
+b 2 /
+c 3 -
+d 6 +
+e 2 /
+f 9 +
+g 2 -
