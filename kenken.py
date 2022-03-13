@@ -775,7 +775,8 @@ def neighbours(puz):
   else:
     return next_puzzle
   
-'''Test
+'''
+# Test
 check.expect("Th1", neighbours(puzzle1soln), [])
 check.expect("Th2", neighbours(puzzle1), puzzle1_first_guess)
 check.expect("Th3", neighbours(puzzle2a),[puzzle2b])
