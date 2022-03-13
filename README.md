@@ -1,4 +1,4 @@
-# KenKen Solver  
+# Ken-gratulations
 
 ## Table of Contents  
 
