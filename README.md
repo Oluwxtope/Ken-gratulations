@@ -54,7 +54,9 @@ Each KenKen puzzle is a square with dimensions *n* by *n*. The objective is to f
 
 ---
 
-1. Run kenken.py and enter the name of the input file with the extension (input.txt)
+1. Run kenken.py and enter the name of the input file with the extension
+   > `python3 kenken.py`  
+   > `input.txt`  
 2. The program will output your solution in a text file *solution.txt*
     > 3  1  2  4  
     > 4  2  3  1  
